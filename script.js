@@ -1,9 +1,12 @@
 // This function allows the user to create a new task and adds it to the existing list
 
-const currentTasks = document.getElementById("tasklist") // Takes the existing tasks
-const newTask = document.createElement("li") // Creates a new list item
+const currentTasks = document.getElementById("tasklist"); // Takes the existing tasks
+const newListItem = document.createElement("li"); // Creates a new list item
 
-function addNewTask(parentList,newTask) {
-    
-    parentList.appendChild(newTask)
+function addNewTask() {
+    let inputValue = document.getElementById("taskInput").value;
+    let newVar = newListItem.createTextNode(inputValue);
+    let addedTask = currentTasks.appendChild(newVar)
 }
+
+document.getElementById("addButton").addEventListener("click",addNewTask);
