@@ -4,4 +4,16 @@ html {
 
 ul {
     background-color: bisque;
+    list-style: none;
 }
+
+ul li {
+    border-bottom: 3px solid black;
+}
+
+.container {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
