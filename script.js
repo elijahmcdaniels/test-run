@@ -6,7 +6,9 @@ const newListItem = document.createElement("li"); // Creates a new list item
 function addNewTask() {
     let inputValue = document.getElementById("taskInput").value;
     let newVar = newListItem.createTextNode(inputValue);
-    let addedTask = currentTasks.appendChild(newVar)
+    addedTask = currentTasks.appendChild(newVar);
+
+
 }
 
 document.getElementById("addButton").addEventListener("click",addNewTask);
