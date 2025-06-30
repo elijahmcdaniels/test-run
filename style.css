@@ -5,6 +5,9 @@
 html {
     background-color: slategray;
 }
+h2 {
+    text-align: center;
+}
 
 ul {
     list-style: none;
@@ -26,7 +29,7 @@ ul li {
     padding: 5px;
 }
 
-ul li.checked {
+/* ul li.checked {
     text-decoration: line-through;
 }
 

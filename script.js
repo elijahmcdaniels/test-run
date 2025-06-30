@@ -4,5 +4,6 @@ const currentTasks = document.getElementById("tasklist") // Takes the existing t
 const newTask = document.createElement("li") // Creates a new list item
 
 function addNewTask(parentList,newTask) {
+    
     parentList.appendChild(newTask)
 }
