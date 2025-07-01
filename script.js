@@ -26,6 +26,8 @@ function addNewTask() {
         newListItem.remove();
     });
 
+    inputValue = ""
+
     checkbox.classList.add("task-checkbox");
     deleteButton.classList.add("task-delete");
 }
