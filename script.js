@@ -4,11 +4,9 @@ const currentTasks = document.getElementById("tasklist"); // Takes the existing 
 const newListItem = document.createElement("li"); // Creates a new list item
 
 function addNewTask() {
-    let inputValue = document.getElementById("taskInput").value;
-    let newVar = newListItem.createTextNode(inputValue);
-    addedTask = currentTasks.appendChild(newVar);
-
-
+    let inputValue = currentTasks.value; // Takes value of input box
+    let newTask = newListItem.textContent(inputValue); // Appends value of input box to list item
+    currentTasks.appendChild(newTask)
 }
 
-document.getElementById("addButton").addEventListener("click",addNewTask);
+document.addEventListener("click", addNewTask);
