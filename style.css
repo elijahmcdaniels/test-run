@@ -40,3 +40,11 @@ ul li:hover {
 .completed {
     text-decoration: line-through;
 }
+
+.task-delete {
+    margin-left: 10px;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
