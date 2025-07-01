@@ -1,7 +1,4 @@
 // This function allows the user to create a new task and adds it to the existing list
-
-
-
 function addNewTask() {
     const currentTasks = document.getElementById("tasklist"); // Takes the existing tasks
     const newListItem = document.createElement("li"); // Creates a new list item
@@ -13,3 +10,13 @@ function addNewTask() {
 
 const button = document.getElementById("addButton")
 button.addEventListener("click", addNewTask); 
+
+// This function adds a delete button for each task
+function addDeleteButton() {
+    let allTasks = document.getElementsByTagName("li")
+    for(i = 0; i < tasklist.length; i++) {
+        const deleteButton = document.createElement("button")
+        deleteButton.textContent = "Delete"
+        allTasks.appendChild(deleteButton)
+    }
+}
