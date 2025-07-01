@@ -5,7 +5,7 @@ const newListItem = document.createElement("li"); // Creates a new list item
 
 function addNewTask() {
     let inputValue = currentTasks.value; // Takes value of input box
-    let newTask = newListItem.textContent(inputValue); // Appends value of input box to list item
+    let newTask = newListItem.appendChild(inputValue); // Appends value of input box to list item
     currentTasks.appendChild(newTask)
 }
 
