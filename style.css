@@ -37,7 +37,6 @@ ul li:hover {
     padding: 5px;
 }
 
-/* ul li.checked {
+.completed {
     text-decoration: line-through;
 }
-

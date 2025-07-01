@@ -9,7 +9,14 @@ function addNewTask() {
     
     currentTasks.appendChild(newListItem);
 
-    const deleteButton = document.createElement("button");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    checkbox.addEventListener("click", () => {
+        newListItem.classList.toggle("completed",checkbox.checked);
+    });
+
+    const deleteButton = document.createElement("button"); // Adds delete button to each task
     deleteButton.textContent = "Delete";
     deleteButton.style.marginLeft = "10px"
     newListItem.appendChild(deleteButton)
