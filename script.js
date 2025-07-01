@@ -11,7 +11,12 @@ function addNewTask() {
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
+    deleteButton.style.marginLeft = "10px"
     newListItem.appendChild(deleteButton)
+
+    deleteButton.addEventListener("click", () => {
+        newListItem.remove();
+    });
 }
 
 const button = document.getElementById("addButton")
