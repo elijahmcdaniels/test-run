@@ -5,7 +5,7 @@ function addNewTask() {
     let inputValue = document.getElementById("taskInput").value; // Takes value of input box
     let text = document.createTextNode(inputValue);
     let newTask = newListItem.appendChild(text); // Appends value of input box to list item
-    currentTasks.appendChild(newListItem)
+    currentTasks.appendChild(newListItem);
 }
 
 const button = document.getElementById("addButton")
@@ -13,10 +13,12 @@ button.addEventListener("click", addNewTask);
 
 // This function adds a delete button for each task
 function addDeleteButton() {
-    let allTasks = document.getElementsByTagName("li")
+    let allTasks = document.getElementsByTagName("li");
     for(i = 0; i < allTasks.length; i++) {
-        const deleteButton = document.createElement("button")
-        deleteButton.textContent = "Delete"
-        allTasks.appendChild(deleteButton)
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        const span = document.createElement("span");
+        span.appendChild(deleteButton);
+        allTasks[i].appendChild(span);
     }
 }
