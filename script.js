@@ -14,7 +14,7 @@ button.addEventListener("click", addNewTask);
 // This function adds a delete button for each task
 function addDeleteButton() {
     let allTasks = document.getElementsByTagName("li")
-    for(i = 0; i < tasklist.length; i++) {
+    for(i = 0; i < allTasks.length; i++) {
         const deleteButton = document.createElement("button")
         deleteButton.textContent = "Delete"
         allTasks.appendChild(deleteButton)
