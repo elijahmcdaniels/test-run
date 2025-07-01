@@ -9,4 +9,5 @@ function addNewTask() {
     currentTasks.appendChild(newTask)
 }
 
-document.addEventListener("click", addNewTask);
+const button = document.getElementById("addButton")
+button.addEventListener("click", addNewTask);
