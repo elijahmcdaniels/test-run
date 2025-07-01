@@ -8,7 +8,7 @@ function addNewTask() {
     let inputValue = document.getElementById("taskInput").value; // Takes value of input box
     let text = document.createTextNode(inputValue);
     let newTask = newListItem.appendChild(text); // Appends value of input box to list item
-    currentTasks.appendChild(newTask)
+    currentTasks.appendChild(newListItem)
 }
 
 const button = document.getElementById("addButton")
